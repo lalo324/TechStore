@@ -1,5 +1,5 @@
 
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 import Bienvenida from '../views/Bienvenida.vue'
 import Inicio from '../views/Inicio.vue'
@@ -42,7 +42,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes
 })
 
